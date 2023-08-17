@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0038B1E22A8CE9F600EBDE6C /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0038B1E12A8CE9F600EBDE6C /* Models.swift */; };
+		0038B1E42A8CEA1B00EBDE6C /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0038B1E32A8CEA1B00EBDE6C /* ArticleView.swift */; };
+		0038B1E72A8CEA5100EBDE6C /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0038B1E62A8CEA5100EBDE6C /* WebView.swift */; };
+		0038B1E92A8CF42000EBDE6C /* Array+RawRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0038B1E82A8CF42000EBDE6C /* Array+RawRepresentable.swift */; };
+		0038B1EC2A8CF95700EBDE6C /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0038B1EB2A8CF95700EBDE6C /* UserDefaults.swift */; };
+		00FF5D052A8E086D002C5DE9 /* FullImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FF5D042A8E086D002C5DE9 /* FullImageView.swift */; };
 		46E5BE6325D433A1009AF39C /* NewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E5BE6225D433A1009AF39C /* NewsApp.swift */; };
 		46E5BE6525D433A1009AF39C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E5BE6425D433A1009AF39C /* ContentView.swift */; };
 		46E5BE6725D433A2009AF39C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46E5BE6625D433A2009AF39C /* Assets.xcassets */; };
@@ -14,6 +20,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0038B1E12A8CE9F600EBDE6C /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		0038B1E32A8CEA1B00EBDE6C /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
+		0038B1E62A8CEA5100EBDE6C /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		0038B1E82A8CF42000EBDE6C /* Array+RawRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+RawRepresentable.swift"; sourceTree = "<group>"; };
+		0038B1EA2A8CF92E00EBDE6C /* News.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = News.entitlements; sourceTree = "<group>"; };
+		0038B1EB2A8CF95700EBDE6C /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		00FF5D042A8E086D002C5DE9 /* FullImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageView.swift; sourceTree = "<group>"; };
 		46E5BE5F25D433A1009AF39C /* News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E5BE6225D433A1009AF39C /* NewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsApp.swift; sourceTree = "<group>"; };
 		46E5BE6425D433A1009AF39C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +46,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0038B1E02A8CE9EB00EBDE6C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0038B1E12A8CE9F600EBDE6C /* Models.swift */,
+				0038B1E82A8CF42000EBDE6C /* Array+RawRepresentable.swift */,
+				0038B1EB2A8CF95700EBDE6C /* UserDefaults.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0038B1E52A8CEA3E00EBDE6C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0038B1E32A8CEA1B00EBDE6C /* ArticleView.swift */,
+				0038B1E62A8CEA5100EBDE6C /* WebView.swift */,
+				00FF5D042A8E086D002C5DE9 /* FullImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		46E5BE5625D433A1009AF39C = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +85,9 @@
 		46E5BE6125D433A1009AF39C /* News */ = {
 			isa = PBXGroup;
 			children = (
+				0038B1EA2A8CF92E00EBDE6C /* News.entitlements */,
+				0038B1E52A8CEA3E00EBDE6C /* Views */,
+				0038B1E02A8CE9EB00EBDE6C /* Data */,
 				46E5BE6225D433A1009AF39C /* NewsApp.swift */,
 				46E5BE6425D433A1009AF39C /* ContentView.swift */,
 				46E5BE6625D433A2009AF39C /* Assets.xcassets */,
@@ -138,8 +174,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0038B1E22A8CE9F600EBDE6C /* Models.swift in Sources */,
+				0038B1E72A8CEA5100EBDE6C /* WebView.swift in Sources */,
 				46E5BE6525D433A1009AF39C /* ContentView.swift in Sources */,
 				46E5BE6325D433A1009AF39C /* NewsApp.swift in Sources */,
+				0038B1E42A8CEA1B00EBDE6C /* ArticleView.swift in Sources */,
+				0038B1EC2A8CF95700EBDE6C /* UserDefaults.swift in Sources */,
+				0038B1E92A8CF42000EBDE6C /* Array+RawRepresentable.swift in Sources */,
+				00FF5D052A8E086D002C5DE9 /* FullImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,16 +309,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = News/News.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"News/Preview Content\"";
+				DEVELOPMENT_TEAM = HJ3C6V359D;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = News/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Demo.News;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kidastudios.LilNewsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -288,16 +332,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = News/News.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"News/Preview Content\"";
+				DEVELOPMENT_TEAM = HJ3C6V359D;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = News/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Demo.News;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kidastudios.LilNewsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
